@@ -1,6 +1,7 @@
 # usualSortAlgorithm(常用排序算法)
 this is a website of usual sorting algorithm,include demo,idea,performance and visualazation.  
-(常用的算法的前端实现，包含示例，性能记录，实现思路和算法可视化)       使用网址：[https://ovenzeze.github.io/usualSortAlgorithm/](https://ovenzeze.github.io/usualSortAlgorithm/)
+(常用的算法的前端实现，包含示例，性能记录，实现思路和算法可视化)       
+使用网址：[https://ovenzeze.github.io/usualSortAlgorithm/](https://ovenzeze.github.io/usualSortAlgorithm/)
 # 目录
 ## 冒泡排序
 ## 选择排序
