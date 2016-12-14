@@ -9,4 +9,11 @@ this is a website of usual sorting algorithm,include demo,idea,performance and v
 ## 选择排序（堆栈）
 ## 插入排序
 ## 归并排序
+## 桶排序
 ## 堆排序
+## 基数排序
+## 希尔排序
+## 选择排序
+## 数组去重（一）
+## 数组去重（二）
+## 数组去重（三）
