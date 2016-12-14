@@ -1,0 +1,119 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/*main*/
+.main{
+	height: 45%;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+	visibility: hidden;
+}
+.init-arr{
+	display: inline-block;
+	width: 40%;
+	float: left;
+	height: 100%;
+	border:2px solid lightblue;
+	overflow: auto;
+}
+p{
+	margin-top: 0px;
+}
+.arr-item{
+	display: inline-block;
+	width: 10%;
+	background-color: lightgreen;
+	margin:0px;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+.arr-item-sorted{
+	display: inline-block;
+	width: 10%;
+	background-color: lightblue;
+	margin:0px;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+.btn-group{
+	width: 15%;
+	float: left;
+	height: 100%;
+	margin-left:10px;
+	margin-right: 10px;
+	border:2px solid #FF9999;
+	text-align: center;
+	overflow: auto;
+}
+.btn{
+	display: inline-block;
+	width: 100%;
+	margin:5px auto;
+	border:1px solid #CCFFFF;
+	background-color: #FFFFCC;
+}
+.show-result{
+	width: 40%;
+	float: left;
+	height: 100%;
+	border:2px solid lightgreen;
+	overflow: auto;
+}
+/*bottom*/
+.bottom{
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+.visualization{
+	height: 50%;
+	width: 40%;
+	border:2px solid lightblue;
+	float: left;
+}
+.count-time{
+	height: 50%;
+	width: 15%;
+	border:2px solid #FF9999;
+	float: left;
+	margin-left:8px;
+	margin-right: 10px;
+}
+.implementation{
+	height: 50%;
+	width: 40%;
+	border:2px solid lightgreen;
+	float: left;
+	overflow: auto;
+}
+.t-c{
+	text-align: center;
+	color: rgb(71, 96, 99);
+}
+.show-item{
+	text-align: center;
+	border-bottom: 2px solid rgb(167, 196, 179);
+	background-color: #FFFFCC;
+}
+.tips{
+	display: none;
+}
+.sort-item{
+	color: rgb(112, 185, 183);
+}
+.visualImg{
+	width: 100%;
+	height: 90%;
+}
+.algorithm-idea{
+	margin-left: 20px;
+	line-height: 30px;
+}
