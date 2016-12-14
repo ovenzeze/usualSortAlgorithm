@@ -1,5 +1,5 @@
 # usualSortAlgorithm(常用排序算法)
-this is a website of usual sorting algorithm,include demo,idea,performance and visualazation.
+this is a website of usual sorting algorithm,include demo,idea,performance and visualazation./n
 (常用的算法的前端实现，包含示例，性能记录，实现思路和算法可视化)
 # 目录
 ## 冒泡排序
