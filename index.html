@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端基础算法</title>
+    <link rel="stylesheet" type="text/css" href="css/algorithm.css">
+</head>
+<body>
+    <div class="main clearfix">
+        <div class="init-arr clearfix">
+          <p class="t-c">原始数组</p>
+            <p id="initArr">点击右侧生成随机数组，在进行排序！</p>
+        </div>
+        <div class="btn-group clearfix">
+            <input type="button" value="长度20的随机数组" class="btn" id="randomArr1">
+            <input type="button" value="长度5000的随机数组" class="btn" id="randomArr2">
+            <input type="button" value="长度10000的随机数组" class="btn" id="randomArr3">
+            <input type="button" value="长度50000的随机数组(慎点！)" class="btn" id="randomArr4">
+            <input type="button" value="Bubble Sort（冒泡排序）" class="btn" id="btn1">
+            <input type="button" value="Selection Sort（选择排序）" class="btn" id="btn2">
+            <input type="button" value="Insertion Sort（插入排序）" class="btn" id="btn3">
+            <input type="button" value="Shell Sort（希尔排序）" class="btn" id="btn4">
+            <input type="button" value="Merge Sort（归并排序）" class="btn" id="btn5">
+            <input type="button" value="Quick Sort（快速排序）" class="btn" id="btn6">
+            <input type="button" value="Heap Sort（堆排序）" class="btn" id="btn7">
+            <input type="button" value="Counting Sort（基数排序）" class="btn" id="btn8">
+            <input type="button" value="Bucket Sort（桶排序）" class="btn" id="btn9">
+            <input type="button" value="Radix Sort（基数排序）" class="btn" id="btn10">
+            <input type="button" value="Array Distinct（数组去重1）" class="btn" id="btn11">
+            <input type="button" value="Array Distinct（数组去重2）" class="btn" id="btn12">
+            <input type="button" value="Array Distinct（数组去重3）" class="btn" id="btn13">
+            </div>
+            <div class="show-result clearfix">
+              <p class="t-c">排序/去重后数组</p>
+              <p id="result"></p>
+            </div>
+            </div>
+            <div class="bottom">
+              <div class="visualization">
+                <p class="t-c">算法可视化（数据来源：<a href="http://visualgo.net/">http://visualgo.net/</a>）</p>
+                <img src="" alt="算法可视化" class="visualImg" id="visualImg">
+              </div>
+              <div class="count-time">
+                <p class="t-c">算法耗时</p>
+                <p class="tips" id="tips">正在奋力计算，请稍候！</p>
+                <p class="show-item">使用 <span class="sort-item" id="sortName">   </span></p>
+                <p class="show-item">排序/去重 <span  class="sort-item" id="sortNum">   </span><span> 个数</span></p>
+                <p class="show-item">耗时 <span  class="sort-item" id="sortTime">   </span><span> ms</span></p>
+              </div>
+              <div class="implementation">
+                <p class="t-c">算法实现思路</p>
+                <p class="algorithm-idea" id="algorithmIdea"></p>
+              </div>
+            </div>
+            <script src = "js/algorithm-idea.js"></script>
+            <script type="text/javascript" src="js/algorithm.js"></script>
+</body>
+
+</html>
