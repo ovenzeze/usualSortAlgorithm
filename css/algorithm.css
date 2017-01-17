@@ -22,6 +22,7 @@ html,body{
 }
 p{
 	margin-top: 0px;
+	margin-bottom: 10px;
 }
 .arr-item{
 	display: inline-block;
@@ -51,7 +52,15 @@ p{
 	margin-right: 10px;
 	border:2px solid #FF9999;
 	text-align: center;
+}
+.sort-content{
+	height: 90%;
 	overflow: auto;
+}
+.distinct-content{
+	height: 80%;
+	overflow: auto;
+	display: none;
 }
 .btn{
 	display: inline-block;
@@ -59,6 +68,26 @@ p{
 	margin:5px auto;
 	border:1px solid #CCFFFF;
 	background-color: #FFFFCC;
+}
+.btn-creat-arr{
+	display: inline-block;
+	width: 16%;
+	height: 25px;
+	margin-right: 10%;
+	border:2px solid #adadad;
+	border-radius: 5px;
+	background-color: white;
+}
+.btn-creat-arr-last{
+	margin-right: 0px;
+}
+.menu-switch-btn{
+	width: 50%;
+	margin-right: -5px;
+	margin-left: -3px;
+	border:2px solid #adadad;
+	border-radius: 5px;
+	background-color: white;
 }
 .show-result{
 	width: 40%;
@@ -69,18 +98,18 @@ p{
 }
 /*bottom*/
 .bottom{
-	height: 100%;
+	height: 45%;
 	width: 100%;
 	margin-top: 20px;
 }
 .visualization{
-	height: 50%;
+	height: 100%;
 	width: 40%;
 	border:2px solid lightblue;
 	float: left;
 }
 .count-time{
-	height: 50%;
+	height: 100%;
 	width: 15%;
 	border:2px solid #FF9999;
 	float: left;
@@ -88,7 +117,7 @@ p{
 	margin-right: 10px;
 }
 .implementation{
-	height: 50%;
+	height: 100%;
 	width: 40%;
 	border:2px solid lightgreen;
 	float: left;
@@ -97,6 +126,7 @@ p{
 .t-c{
 	text-align: center;
 	color: rgb(71, 96, 99);
+	margin-top: 10px;
 }
 .show-item{
 	text-align: center;

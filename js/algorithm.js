@@ -8,10 +8,15 @@ let randomArr50000 = document.getElementById("randomArr4");
 let sortName = document.getElementById("sortName");
 let sortNum = document.getElementById("sortNum");
 let sortTime = document.getElementById("sortTime");
+let sortBtn = document.getElementById('sortBtn');
+let distinctBtn = document.getElementById('distinctBtn');
+let sortContent = document.getElementById('sortContent');
+let distinctContent = document.getElementById('distinctContent');
 let tips = document.getElementById("tips");
 let visualImg = document.getElementById('visualImg');
 let algorithmIdeaText = document.getElementById('algorithmIdea');
 let btnBubbltSort = document.getElementById("btn1");
+let btnBubbltSortFlag = document.getElementById("btn14");
 let btnSelectionSort = document.getElementById("btn2");
 let btnInsertionSort = document.getElementById("btn3");
 let btnShellSort = document.getElementById("btn4");
@@ -25,7 +30,12 @@ let distinct1 = document.getElementById("btn11");
 let distinct2 = document.getElementById("btn12");
 let distinct3 = document.getElementById("btn13");
 
-
+// switch menu
+sortBtn.onclick = function(){switchMenu("sortBtn")};
+distinctBtn.onclick = function(){switchMenu("distinctBtn")};
+function switchMenu(btnName){
+  btnName == "sortBtn" ? (distinctContent.style.display = "none",sortContent.style.display = "block") : (sortContent.style.display = "none",distinctContent.style.display = "block");
+}
 // create random array
 // id:element you want to bind event
 // length:length of the random array
@@ -33,6 +43,7 @@ function showInitArr(id,length){
   id.addEventListener("click",function(){
       let initTemp = "";
       let initSignle = "";
+      initArr = [];
     	for (let i = 0; i < length; i++) {
     		initArr[i] = Math.round(Math.random(i)*length);
         if((i+1)%10 == 0){
@@ -61,11 +72,11 @@ function showResult(id,method,name){
     	let initSignle = "";
     	let length = initArr.length;
       let beginTime = (new Date()).getTime();
-      console.log("正在排序");
       let initArrCopy = initArr.slice(0); //slice会复制原数组，splice会切割（改变）原数组，数组保存的是引用类型
+      console.log("正在排序");
       let sortedArr = method(initArrCopy);
-      initArrCopy = initArr.slice(0);
       console.log("排序完成");
+      initArrCopy = initArr.slice(0);
       sortName.innerText = id.value;
       sortNum.innerText = length;
       sortTime.innerText = (new Date()).getTime() - beginTime;
@@ -76,7 +87,6 @@ function showResult(id,method,name){
     	divResultArr.innerHTML = initTemp;
       visualImg.src = "img/"+name+".gif";
       algorithmIdeaText.innerHTML = eval(name+"Text");
-      // initArr = [];
   });
 }
 
@@ -98,21 +108,28 @@ let bubbleSort = function (arr){
 // use
 showResult(btnBubbltSort,bubbleSort,"bubbleSort");
 
-// a better bubbltSort(改良的冒泡排序)
-function bubbleSortBetter(arr){
+// a better bubbltSort(改良的冒泡排序)[使用flag标记]
+let bubbleSortFlag = function (arr){
 	const times = arr.length;
 	let temp;
+  let flag = true;
 	for (let i = 0; i < times; i++) {
 		for (let j = 0; j < times-1-i; j++) {
+      flag = false;
 			if (arr[j] > arr[j+1]) {
 				temp = arr[j+1];
 				arr[j+1] = arr[j];
 				arr[j] = temp;
+        flag = true;
 			}
 		}
+    if(!flag){
+      break;
+    }
 	}
 	return arr;
 }
+showResult(btnBubbltSortFlag,bubbleSortFlag,"bubbleSortBetter");
 
 // quickSort(快速排序)
 let quickSort = function(arr) {
