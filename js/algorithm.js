@@ -88,7 +88,7 @@ function showResult(id, method, name) {
         }
         divResultArr.innerHTML = initTemp;
         name == "arrayDistinct1" || name == "arrayDistinct2" || name == "arrayDistinct3" ?
-            visualImg.src = "http://123.206.204.163:2333/media/no-image.gif" : visualImg.src = "http://123.206.204.163:2333/media/" + name + ".gif";
+            visualImg.src = "http://clayz.top/media/no-image.gif" : visualImg.src = "http://clayz.top/media/" + name + ".gif";
         algorithmIdeaText.innerHTML = eval(name + "Text");
     });
 }
