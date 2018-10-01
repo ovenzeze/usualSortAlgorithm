@@ -72,13 +72,9 @@ p{
 	background-color: #FFFFCC;
 }
 .btn-creat-arr{
-	display: inline-block;
-	width: 16%;
-	height: 25px;
-	margin-right: 10%;
-	border:2px solid #adadad;
-	border-radius: 5px;
-	background-color: white;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 5%;
 }
 .btn-creat-arr-last{
 	margin-right: 0px;
@@ -148,4 +144,25 @@ p{
 .algorithm-idea{
 	margin-left: 20px;
 	line-height: 30px;
+}
+/*========================================>>>>>>>>>>>>*/
+.box-header{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background-color: #90b6dddb;
+    text-align: center;
+    color: #56615e;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-creat-arr{
+    background-color: rgb(182, 116, 198) !important;
+}
+.mdl-tabs__tab{
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #56615e;
 }

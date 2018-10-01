@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>前端基础算法</title>
+    <link href="https://cdn.bootcss.com/material-design-lite/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/algorithm.css">
+</head>
+
+<body>
+<!--<div class="main clearfix">-->
+    <!--&lt;!&ndash;<div class="init-arr clearfix">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p class="t-c">原始数组</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button&ndash;&gt;-->
+                <!--&lt;!&ndash;class="btn-creat-arr mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" id="randomArr1">&ndash;&gt;-->
+            <!--&lt;!&ndash;长度20&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button&ndash;&gt;-->
+                <!--&lt;!&ndash;class="btn-creat-arr mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" id="randomArr2">&ndash;&gt;-->
+            <!--&lt;!&ndash;长度5000&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button&ndash;&gt;-->
+                <!--&lt;!&ndash;class="btn-creat-arr mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" id="randomArr3">&ndash;&gt;-->
+            <!--&lt;!&ndash;长度10000&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button&ndash;&gt;-->
+                <!--&lt;!&ndash;class="btn-creat-arr mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" id="randomArr4">&ndash;&gt;-->
+            <!--&lt;!&ndash;长度50000&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<input type="button" value="长度20" class="btn-creat-arr" id="randomArr1">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<input type="button" value="长度5000" class="btn-creat-arr" id="randomArr2">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<input type="button" value="长度10000" class="btn-creat-arr" id="randomArr3">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<input type="button" value="长度50000(慎点！)" class="btn-creat-arr btn-creat-arr-last" id="randomArr4">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<p class="t-c" id="initArr">点击上方按钮生成随机数组，再进行排序/去重！</p>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="btn-group clearfix btn-group-menu">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="menu-switch-box">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button"  value="排序" class="menu-switch-btn" id="sortBtn">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button"  value="去重" class="menu-switch-btn" id="distinctBtn">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="sort-content" id="sortContent">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Bubble Sort（冒泡排序）" class="btn" id="btn1">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Bubble Sort（冒泡排序[flag]）" class="btn" id="btn14">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Quick Sort（快速排序）" class="btn" id="btn6">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Selection Sort（选择排序）" class="btn" id="btn2">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Insertion Sort（插入排序）" class="btn" id="btn3">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Shell Sort（希尔排序）" class="btn" id="btn4">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Merge Sort（归并排序）" class="btn" id="btn5">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Heap Sort（堆排序）" class="btn" id="btn7">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Counting Sort（基数排序）" class="btn" id="btn8">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Bucket Sort（桶排序）" class="btn" id="btn9">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Radix Sort（基数排序）" class="btn" id="btn10">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="distinct-content" id="distinctContent">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Array Distinct（临时数组）" class="btn" id="btn11">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Array Distinct（HashMap）" class="btn" id="btn12">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" value="Array Distinct（IndexOf）" class="btn" id="btn13">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="show-result clearfix">&ndash;&gt;-->
+        <!--&lt;!&ndash;<p class="t-c">排序/去重后数组</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p id="result"></p>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--</div>-->
+<div class="mdl-grid" style="height: 100%;">
+    <div class="mdl-cell mdl-cell--5-col">
+        <div class="mdl-cell mdl-cell--12-col" style="height: 5%; margin-top: 0; background-color: #f1f6f9a6">
+            <div>
+                <button
+                        class="btn-creat-arr mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="randomArr1">
+                    长度20
+                </button>
+                <button
+                        class="btn-creat-arr mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="randomArr2">
+                    长度5000
+                </button>
+                <button
+                        class="btn-creat-arr mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="randomArr3">
+                    长度10000
+                </button>
+                <button
+                        class="btn-creat-arr mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="randomArr4">
+                    长度50000
+                </button>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col" style="height: 52%; margin-top: 0; background-color: #f1f6f9a6">
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar" style="background-color: #90b6dddb; height: 30px;">
+                    <a href="#starks-panel" class="mdl-tabs__tab is-active">
+                        原始数据</a>
+                    <a href="#lannisters-panel" class="mdl-tabs__tab">结果数据</a>
+                </div>
+
+                <div class="mdl-tabs__panel is-active" id="starks-panel">
+                    <ul>
+                        <li>Eddard</li>
+                        <li>Catelyn</li>
+                        <li>Robb</li>
+                        <li>Sansa</li>
+                        <li>Brandon</li>
+                        <li>Arya</li>
+                        <li>Rickon</li>
+                    </ul>
+                </div>
+                <div class="mdl-tabs__panel" id="lannisters-panel">
+                    <ul>
+                        <li>Tywin</li>
+                        <li>Cersei</li>
+                        <li>Jamie</li>
+                        <li>Tyrion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col" style="height:41%; background-color: #f1f6f9a6">
+            <div class="box-header">可视化</div>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--2-col" style="background-color: #f1f6f9a6">
+        <div class="box-header">操作</div>
+
+    </div>
+    <div class="mdl-cell mdl-cell--5-col" style="background-color: #f1f6f9a6">
+        <div class="box-header">思路</div>
+
+    </div>
+<!--</div>-->
+<script src="https://cdn.bootcss.com/material-design-lite/1.3.0/material.min.js"></script>
+<script src="js/algorithm-idea.js"></script>
+<script type="text/javascript" src="js/algorithm.js"></script>
+</body>
+
+</html>
